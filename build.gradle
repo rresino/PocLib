@@ -21,6 +21,8 @@ test {
 
 release {
     preTagCommitMessage = 'Release: '
+    tagCommitMessage = 'Release creating tag: '
+    newVersionCommitMessage = 'Release new version commit: '
     tagTemplate = 'v${version}'
 
     git {
