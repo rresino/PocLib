@@ -19,6 +19,12 @@ pipeline {
                 sh './gradlew test'
             }
         }
+        stage('Publish') {
+            steps {
+                echo 'Publish lib'
+                sh './gradle publishToMavenLocal'
+            }
+        }
         stage('Release') {
             steps {
                 echo 'Release....'
