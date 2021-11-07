@@ -18,3 +18,13 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+release {
+    git {
+        requireBranch = 'main'
+        pushToRemote = 'origin'
+        pushToBranchPrefix = ''
+        commitVersionFileOnly = false
+        signTag = false
+    }
+}
