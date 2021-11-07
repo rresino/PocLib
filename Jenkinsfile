@@ -22,7 +22,7 @@ pipeline {
         stage('Publish') {
             steps {
                 echo 'Publish lib'
-                sh './gradle publishToMavenLocal'
+                sh './gradlew publishToMavenLocal'
             }
         }
         stage('Release') {
