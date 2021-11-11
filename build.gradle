@@ -24,7 +24,7 @@ release {
     preTagCommitMessage = 'Release: '
     tagCommitMessage = 'Release creating tag: '
     newVersionCommitMessage = 'Release new version commit: '
-    tagTemplate = 'v${version}'
+//    tagTemplate = 'v${version}'
 
     git {
         requireBranch = 'main'
